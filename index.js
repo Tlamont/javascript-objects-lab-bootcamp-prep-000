@@ -18,5 +18,7 @@ function deleteFromObjectByKey(obj,key){
   return newObj
 }
 function deleteFromObjectByKey(obj,key){
- 
+ var cloneObj = Object.assign({, obj})
+ delete cloneObj[key]
+ return cloneObj
 }
